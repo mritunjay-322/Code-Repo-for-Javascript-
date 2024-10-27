@@ -35,7 +35,7 @@ console.log(typeof outsideTemp)
 //  Stack(Primitive) & heap(Non-Primitive)
 
 let myName = "Mritunjay"
-let anotherName = myName
+let anotherName = myName        // Stack  in this only copying is done..
 anotherName = "Shiv"
 console.log(myName);
 console.log(anotherName);
@@ -46,7 +46,7 @@ let userOne = {
     upi: "shiv@ybl"
 }
 
-let userTwo = userOne
+let userTwo = userOne                   // In Heap reference is passesd (address is passed) so here copying is not done but the access is given so the value changes 
 userTwo.email = "mri@google.com"
 
 console.log(userOne.email);
